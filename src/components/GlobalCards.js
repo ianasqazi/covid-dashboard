@@ -21,6 +21,7 @@ export default class GlobalCards extends Component {
       }
 
     componentDidMount() {
+        // Global Total Count
         fetch('https://covidapi.info/api/v1/global')
 
         .then(res => res.json())
