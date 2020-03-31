@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import Card from 'react-bootstrap/Card'
 import { Container, Row, Col } from 'reactstrap';
 import { RollBoxLoading } from 'react-loadingg';
 
@@ -65,26 +66,38 @@ export default class GlobalCards extends Component {
                 <Row>
                     <Col sm="4">
                         <Row className="justify-content-center">
-                            Confirmed
-                        </Row>
-                        <Row className="justify-content-center">
-                            {confirmed}
-                        </Row>
-                    </Col>
-                    <Col sm="4">
-                        <Row className="justify-content-center">
-                            Deaths
-                        </Row>
-                        <Row className="justify-content-center">
-                            {deaths}
+                        <Card  className="text-center" border="primary" style={{ width: '18rem' }}>
+                            <Card.Header>Confirmed Cases</Card.Header>
+                            <Card.Body>
+                                <Card.Text>
+                                    {confirmed}
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
                         </Row>
                     </Col>
                     <Col sm="4">
                         <Row className="justify-content-center">
-                            Recovered
+                            <Card  className="text-center" border="danger" style={{ width: '18rem' }}>
+                                <Card.Header>Deaths</Card.Header>
+                                <Card.Body>
+                                    <Card.Text>
+                                        {deaths}
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
                         </Row>
+                    </Col>
+                    <Col sm="4">
                         <Row className="justify-content-center">
-                            {recovered}
+                            <Card  className="text-center" border="success" style={{ width: '18rem' }}>
+                                <Card.Header>Recovered</Card.Header>
+                                <Card.Body>
+                                    <Card.Text>
+                                        {recovered}
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
                         </Row>
                     </Col>
                 </Row>
