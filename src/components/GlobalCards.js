@@ -60,14 +60,14 @@ export default class GlobalCards extends Component {
             <Container>
                 <Row className="justify-content-center">
                     <Col>
-                GLOBAL COUNT
+                <h3>GLOBAL COUNT</h3>
                     </Col>
                 </Row>
 
                 <Row>
                     <Col sm="4">
                         <Row className="justify-content-center">
-                        <Card  className="text-center" border="primary" style={{ width: '18rem' }}>
+                        <Card className="text-center" border="primary" style={{ width: '18rem', margin: '5px' }}>
                             <Card.Header>Confirmed Cases</Card.Header>
                             <Card.Body>
                                 <Card.Text>
@@ -79,7 +79,7 @@ export default class GlobalCards extends Component {
                     </Col>
                     <Col sm="4">
                         <Row className="justify-content-center">
-                            <Card  className="text-center" border="danger" style={{ width: '18rem' }}>
+                            <Card className="text-center" border="danger" style={{ width: '18rem', margin: '5px' }}>
                                 <Card.Header>Deaths</Card.Header>
                                 <Card.Body>
                                     <Card.Text>
@@ -91,7 +91,7 @@ export default class GlobalCards extends Component {
                     </Col>
                     <Col sm="4">
                         <Row className="justify-content-center">
-                            <Card  className="text-center" border="success" style={{ width: '18rem' }}>
+                            <Card className="text-center" border="success" style={{ width: '18rem', margin: '5px' }}>
                                 <Card.Header>Recovered</Card.Header>
                                 <Card.Body>
                                     <Card.Text>
