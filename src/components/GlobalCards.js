@@ -4,6 +4,9 @@ import Card from 'react-bootstrap/Card'
 import { Container, Row, Col } from 'reactstrap';
 import { RollBoxLoading } from 'react-loadingg';
 
+import ReactApexChart from 'react-apexcharts';
+
+
 import "../styles/GlobalCards.css";
 
 export default class GlobalCards extends Component {
@@ -17,6 +20,9 @@ export default class GlobalCards extends Component {
           confirmed: '',
           deaths: '',
           recovered:'',
+          series: {},
+          options: {},
+          labels: []
         };
       }
 
@@ -29,13 +35,39 @@ export default class GlobalCards extends Component {
         .then(
 
             (result) => {
-                console.log(result);
+                // console.log(result);
               this.setState({
                 isLoaded: true,
                 date: result.date,
                 confirmed: result.result.confirmed,
                 deaths: result.result.deaths,
-                recovered: result.result.recovered
+                recovered: result.result.recovered,
+                // series: [44, 55, 67],
+                series: [{
+                    data: [result.result.confirmed, result.result.deaths, result.result.recovered]
+                  }],
+                  options: {
+                    chart: {
+                      type: 'bar',
+                      height: 300,
+                    },
+                    plotOptions: {
+                      bar: {
+                        vertical: true,
+                        endingShape: 'rounded',
+                        columnWidth: '50%',
+                        distributed: true,
+
+                      }
+                    },
+                    dataLabels: {
+                      enabled: false
+                    },
+                    xaxis: {
+                      categories: ['Confirmed', 'Deaths', 'Recovered'],
+                    }
+                  },
+                
               });
             },
             (error) => {
@@ -49,7 +81,7 @@ export default class GlobalCards extends Component {
 
 
     render() {
-        const { error, isLoaded, confirmed, deaths, recovered } = this.state;
+        const { error, isLoaded, confirmed, deaths, recovered} = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;
           } else if (!isLoaded) {
@@ -101,6 +133,10 @@ export default class GlobalCards extends Component {
                             </Card>
                         </Row>
                     </Col>
+                </Row>
+
+                <Row className="justify-content-center">
+                    <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={350} />
                 </Row>
             </Container>
             </>
