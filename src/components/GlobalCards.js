@@ -42,31 +42,31 @@ export default class GlobalCards extends Component {
                 confirmed: result.result.confirmed,
                 deaths: result.result.deaths,
                 recovered: result.result.recovered,
-                // series: [44, 55, 67],
+
                 series: [{
                     data: [result.result.confirmed, result.result.deaths, result.result.recovered]
                   }],
-                  options: {
-                    chart: {
-                      type: 'bar',
-                      height: 300,
-                    },
-                    plotOptions: {
-                      bar: {
-                        vertical: true,
-                        endingShape: 'rounded',
-                        columnWidth: '50%',
-                        distributed: true,
+                options: {
+                chart: {
+                    type: 'bar',
+                    height: 300,
+                },
+                plotOptions: {
+                    bar: {
+                    vertical: true,
+                    endingShape: 'rounded',
+                    columnWidth: '50%',
+                    distributed: true,
 
-                      }
-                    },
-                    dataLabels: {
-                      enabled: false
-                    },
-                    xaxis: {
-                      categories: ['Confirmed', 'Deaths', 'Recovered'],
                     }
-                  },
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                xaxis: {
+                    categories: ['Confirmed', 'Deaths', 'Recovered'],
+                }
+                },
                 
               });
             },
@@ -136,7 +136,9 @@ export default class GlobalCards extends Component {
                 </Row>
 
                 <Row className="justify-content-center">
-                    <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={350} />
+                    <Col>
+                        <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={350} />
+                    </Col>
                 </Row>
             </Container>
             </>
