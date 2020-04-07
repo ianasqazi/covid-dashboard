@@ -137,7 +137,7 @@ export default class GlobalCards extends Component {
 
                 <Row className="justify-content-center">
                     <Col>
-                        <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={350} />
+                        {/* <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={350} /> */}
                     </Col>
                 </Row>
             </Container>
