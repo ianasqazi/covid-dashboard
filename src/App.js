@@ -187,21 +187,20 @@ function App() {
 
   return (
     <>
-<Navbar />
+      <Navbar />
       <Header />
       <GlobalCards />
-    <div className="App">
-        
-      
 
-      <div className="mapContainer">
-        {/* Mapbox Container */}
-        <div className="mapBox" ref={mapboxElRef} />
-      </div>
+        <div className="App">
+          
+          <div className="mapContainer">
+            {/* Mapbox Container */}
+            <div className="mapBox" ref={mapboxElRef} />
+          </div>
 
-      <Footer />
 
-    </div>
+        </div>
+    <Footer />
 
     </>
   );
