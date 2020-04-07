@@ -13,18 +13,20 @@ export default class GlobalCards extends Component {
     render() {
         return (
 
-<Navbar bg="dark" variant="dark" expand="md" style={NavStyles}>
-  <Navbar.Brand href="#home">COVID-19</Navbar.Brand>
+<Navbar bg="dark" variant="dark" expand="md">
+  <Navbar.Brand href="/">COVID-19</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="/">Home</Nav.Link>
-      <Nav.Link href="#link">Link</Nav.Link>
+      {/* <Nav.Link href="/">Home</Nav.Link>
+      <Nav.Link href="#link">Link</Nav.Link> */}
     </Nav>
-    <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-danger">Search</Button>
-    </Form>
+
+    <Nav>
+      <Nav.Link href="https://github.com/ianasqazi/covid-dashboard" target="_blank">GitHub Repo</Nav.Link>
+      <Nav.Link href="https://ianasqazi.ca" target="_blank">My Portfolio</Nav.Link>
+    </Nav>
+   
   </Navbar.Collapse>
 </Navbar>
         )
