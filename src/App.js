@@ -147,22 +147,17 @@ function App() {
 
             const coordinates = e.features[0].geometry.coordinates.slice();
 
-            const countryISO =
-              lookup.byCountry(country)?.iso2 ||
-              lookup.byInternet(country)?.iso2;
-            const provinceHTML =
-              province !== "null" ? `<p>Province: <b>${province}</b></p>` : "";
+            const countryISO = lookup.byCountry(country)?.iso2 || lookup.byInternet(country)?.iso2;
+            const provinceHTML = province !== "null" ? `<p>Province: <b>${province}</b></p>` : "";
             const mortalityRate = ((deaths / cases) * 100).toFixed(2);
-            const countryFlagHTML = Boolean(countryISO)
-              ? `<img src="https://www.countryflags.io/${countryISO}/flat/64.png"></img>`
-              : "";
+            const countryFlagHTML = Boolean(countryISO) ? `<img src="https://www.countryflags.io/${countryISO}/flat/64.png"></img>` : "";
 
             const HTML = `<p>Country: <b>${country}</b></p>
                 ${provinceHTML}
                 <p>Cases: <b>${cases}</b></p>
                 <p>Deaths: <b>${deaths}</b></p>
                 <p>Mortality Rate: <b>${mortalityRate}%</b></p>
-                ${countryFlagHTML}`;
+                <p align="center">${countryFlagHTML}</p>`;
 
             // Ensure that if the map is zoomed out such that multiple
             // copies of the feature are visible, the popup appears
