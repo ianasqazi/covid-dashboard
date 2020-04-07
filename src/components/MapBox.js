@@ -1,8 +1,11 @@
 import React, { useRef, useEffect } from "react";
+import { Container, Row, Col } from 'reactstrap';
+
 import mapboxgl from "mapbox-gl";
 import useSWR from "swr";
 import lookup from "country-code-lookup";
 import "../styles/app.scss";
+
 // Need mapbox css for tooltips later in the tutorial
 import "mapbox-gl/dist/mapbox-gl.css";
 
@@ -181,10 +184,17 @@ function App() {
 
   return (
       <>
-      <div className="mapContainer">
-        {/* Mapbox Container */}
-        <div className="mapBox" ref={mapboxElRef} />
-      </div>
+      <Container>
+          <Row>
+              <Col>
+                <div className="mapContainer">
+                    {/* Mapbox Container */}
+                    <div className="mapBox" ref={mapboxElRef} />
+                </div>
+              </Col>
+          </Row>
+      </Container>
+      
     </>
   );
 }
