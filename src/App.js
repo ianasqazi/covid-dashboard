@@ -12,7 +12,7 @@ import mapboxgl from "mapbox-gl";
 import useSWR from "swr";
 import lookup from "country-code-lookup";
 import "./styles/App.scss";
-// Need mapbox css for tooltips later in the tutorial
+
 import "mapbox-gl/dist/mapbox-gl.css";
 
 mapboxgl.accessToken =
@@ -192,12 +192,11 @@ function App() {
       <GlobalCards />
 
         <div className="App">
-          
+
           <div className="mapContainer">
             {/* Mapbox Container */}
             <div className="mapBox" ref={mapboxElRef} />
           </div>
-
 
         </div>
     <Footer />
