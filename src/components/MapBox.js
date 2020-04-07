@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import mapboxgl from "mapbox-gl";
 import useSWR from "swr";
 import lookup from "country-code-lookup";
-// import "./App.scss";
+import "../styles/app.scss";
 // Need mapbox css for tooltips later in the tutorial
 import "mapbox-gl/dist/mapbox-gl.css";
 
@@ -180,12 +180,12 @@ function App() {
   }, [data]);
 
   return (
-    <div className="App">
+      <>
       <div className="mapContainer">
         {/* Mapbox Container */}
         <div className="mapBox" ref={mapboxElRef} />
       </div>
-    </div>
+    </>
   );
 }
 
