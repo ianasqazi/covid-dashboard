@@ -6,9 +6,6 @@ import { RollBoxLoading } from 'react-loadingg';
 
 import ReactApexChart from 'react-apexcharts';
 
-
-import "../styles/GlobalCards.css";
-
 export default class GlobalCards extends Component {
 
     constructor(props) {
