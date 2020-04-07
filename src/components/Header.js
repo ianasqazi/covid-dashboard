@@ -10,7 +10,7 @@ export default class Header extends Component {
     return (
       <Jumbotron fluid>
         <Container>
-          <h1>COVID - 19</h1>
+          <h1 className="text-center">COVID - 19</h1>
           <p>
             This is a modified jumbotron that occupies the entire horizontal space of
             its parent.

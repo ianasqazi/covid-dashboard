@@ -48,7 +48,9 @@ function App() {
     if (data) {
       const map = new mapboxgl.Map({
         container: mapboxElRef.current,
-        style: "mapbox://styles/notalemesa/ck8dqwdum09ju1ioj65e3ql3k",
+        // style: "mapbox://styles/notalemesa/ck8dqwdum09ju1ioj65e3ql3k",
+        style: 'mapbox://styles/mapbox/dark-v10', //hosted style id
+
         center: [16, 27],
         zoom: 2
       });
@@ -198,6 +200,7 @@ function App() {
         {/* Mapbox Container */}
         <div className="mapBox" ref={mapboxElRef} />
       </div>
+
     </div>
     </>
   );
