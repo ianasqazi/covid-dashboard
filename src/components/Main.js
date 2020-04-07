@@ -11,7 +11,7 @@ export default class Main extends Component {
     return (
       <>
         <GlobalCards />
-        <GlobalDateCountTable />
+        {/* <GlobalDateCountTable /> */}
         {/* <GlobalDateCountChart /> */}
 
 
