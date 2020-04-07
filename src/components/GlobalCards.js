@@ -89,15 +89,15 @@ export default class GlobalCards extends Component {
             <Container>
                 <Row className="justify-content-center">
                     <Col>
-                <h3>GLOBAL COUNT</h3>
+                <h3 className="text-center">GLOBAL COUNT</h3>
                     </Col>
                 </Row>
 
                 <Row>
                     <Col sm="4">
                         <Row className="justify-content-center">
-                        <Card className="text-center" border="primary" style={{ width: '18rem', margin: '5px' }}>
-                            <Card.Header>Confirmed Cases</Card.Header>
+                        <Card bg="primary" className="text-center" text="light" style={{ width: '18rem', margin: '5px' }}>
+                            <Card.Header><b>CONFIRMED CASES</b></Card.Header>
                             <Card.Body>
                                 <Card.Text>
                                     {confirmed}
@@ -108,8 +108,8 @@ export default class GlobalCards extends Component {
                     </Col>
                     <Col sm="4">
                         <Row className="justify-content-center">
-                            <Card className="text-center" border="danger" style={{ width: '18rem', margin: '5px' }}>
-                                <Card.Header>Deaths</Card.Header>
+                            <Card  bg="danger" className="text-center" text="light" style={{ width: '18rem', margin: '5px' }}>
+                                <Card.Header><b>DEATHS</b></Card.Header>
                                 <Card.Body>
                                     <Card.Text>
                                         {deaths}
@@ -120,8 +120,8 @@ export default class GlobalCards extends Component {
                     </Col>
                     <Col sm="4">
                         <Row className="justify-content-center">
-                            <Card className="text-center" border="success" style={{ width: '18rem', margin: '5px' }}>
-                                <Card.Header>Recovered</Card.Header>
+                            <Card  bg="warning" className="text-center"  text="light" style={{ width: '18rem', margin: '5px' }}>
+                                <Card.Header><b>RECOVERED</b></Card.Header>
                                 <Card.Body>
                                     <Card.Text>
                                         {recovered}

@@ -13,7 +13,7 @@ export default class GlobalCards extends Component {
     render() {
         return (
 
-<Navbar bg="dark" variant="dark" expand="md">
+<Navbar bg="dark" variant="dark" expand="md" style={NavStyles}>
   <Navbar.Brand href="#home">COVID-19</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
@@ -29,4 +29,8 @@ export default class GlobalCards extends Component {
 </Navbar>
         )
     }
+}
+
+const NavStyles={
+  padding:"red"
 }
