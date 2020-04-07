@@ -4,6 +4,7 @@ import GlobalDateCountChart from "./GlobalDateCountChart";
 
 import GlobalDateCountTable from "./GlobalDateCountTable";
 
+import MapBox from "./MapBox.js";
 import "../styles/Main.css";
 
 export default class Main extends Component {
@@ -13,6 +14,7 @@ export default class Main extends Component {
         <GlobalCards />
         {/* <GlobalDateCountTable /> */}
         {/* <GlobalDateCountChart /> */}
+        <MapBox />
 
 
       </>
