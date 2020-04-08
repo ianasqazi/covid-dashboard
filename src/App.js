@@ -8,8 +8,9 @@ import Footer from './components/Footer';
 import mapboxgl from "mapbox-gl";
 import useSWR from "swr";
 import lookup from "country-code-lookup";
-// import "./styles/App.scss";
-import "./App.scss";
+
+import './App.css';
+
 
 import "mapbox-gl/dist/mapbox-gl.css";
 
