@@ -21,12 +21,12 @@ app.use(function(req, res) {
   if (process.env.NODE_ENV === 'production') {
     console.log(buildPath);
     // res.sendFile(path.join(__dirname, './client/build/index.html'));
-    res.sendFile(path.join(publicPath, 'index.html'));
+    res.sendFile(path.join(buildPath, 'index.html'));
 
   } else {
     // console.log(res);
     // res.sendFile(path.join(__dirname, './client/public/index.html'));
-      res.sendFile(path.join(publicPath, 'index.html'));
+      res.sendFile(path.join(buildPath, 'index.html'));
 
   }
 });
