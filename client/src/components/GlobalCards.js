@@ -72,7 +72,7 @@ export default class GlobalCards extends Component {
                     <Col sm="4">
                         <Row className="justify-content-center">
                         <Card bg="primary" className="text-center" text="light" style={{ fontSize: '25px', width: '18rem', margin: '5px' }}>
-                            <Card.Header><b>CONFIRMED CASES</b></Card.Header>
+                            <Card.Header><b>CONFIRMED</b></Card.Header>
                             <Card.Body>
                                 <Card.Text>
                                     {confirmed}
