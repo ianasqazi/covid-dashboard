@@ -63,7 +63,7 @@ export default class GlobalCards extends Component {
             <Container>
                 <Row className="justify-content-center">
                     <Col>
-                        <h3 className="text-center">GLOBAL COUNT</h3>
+                        <h3 style={{fontSize:'35px'}} className="text-center">GLOBAL COUNT</h3>
                         <p style={{fontSize:'10px'}} className="text-center">as of : {date}</p>
                     </Col>
                 </Row>
@@ -71,7 +71,7 @@ export default class GlobalCards extends Component {
                 <Row>
                     <Col sm="4">
                         <Row className="justify-content-center">
-                        <Card bg="primary" className="text-center" text="light" style={{ width: '18rem', margin: '5px' }}>
+                        <Card bg="primary" className="text-center" text="light" style={{ fontSize: '25px', width: '18rem', margin: '5px' }}>
                             <Card.Header><b>CONFIRMED CASES</b></Card.Header>
                             <Card.Body>
                                 <Card.Text>
@@ -83,7 +83,7 @@ export default class GlobalCards extends Component {
                     </Col>
                     <Col sm="4">
                         <Row className="justify-content-center">
-                            <Card  bg="danger" className="text-center" text="light" style={{ width: '18rem', margin: '5px' }}>
+                            <Card  bg="danger" className="text-center" text="light" style={{ fontSize: '25px', width: '18rem', margin: '5px' }}>
                                 <Card.Header><b>DEATHS</b></Card.Header>
                                 <Card.Body>
                                     <Card.Text>
@@ -95,7 +95,7 @@ export default class GlobalCards extends Component {
                     </Col>
                     <Col sm="4">
                         <Row className="justify-content-center">
-                            <Card  bg="warning" className="text-center"  text="dark" style={{ width: '18rem', margin: '5px' }}>
+                            <Card  bg="warning" className="text-center"  text="dark" style={{ fontSize: '25px', width: '18rem', margin: '5px' }}>
                                 <Card.Header><b>RECOVERED</b></Card.Header>
                                 <Card.Body>
                                     <Card.Text>
