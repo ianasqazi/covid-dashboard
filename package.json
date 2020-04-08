@@ -1,7 +1,6 @@
 {
   "name": "covid-dashboard",
   "description": "A dashboard to check Covid Updates",
-  
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -12,8 +11,10 @@
     "bootstrap": "^4.4.1",
     "comma-number": "^2.0.1",
     "country-code-lookup": "0.0.17",
+    "express": "^4.17.1",
     "mapbox-gl": "^1.9.1",
     "node-sass": "^4.13.1",
+    "path": "^0.12.7",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
@@ -27,7 +28,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
+  },  
   "eslintConfig": {
     "extends": "react-app"
   },
