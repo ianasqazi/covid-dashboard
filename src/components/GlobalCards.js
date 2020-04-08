@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card'
 import { Container, Row, Col } from 'reactstrap';
 import { RollBoxLoading } from 'react-loadingg';
 
-import ReactApexChart from 'react-apexcharts';
+import  commaNumber  from 'comma-number';
 
 export default class GlobalCards extends Component {
 
@@ -36,35 +36,9 @@ export default class GlobalCards extends Component {
               this.setState({
                 isLoaded: true,
                 date: result.date,
-                confirmed: result.result.confirmed,
-                deaths: result.result.deaths,
-                recovered: result.result.recovered,
-
-                series: [{
-                    data: [result.result.confirmed, result.result.deaths, result.result.recovered]
-                  }],
-                options: {
-                chart: {
-                    type: 'bar',
-                    height: 300,
-                },
-                plotOptions: {
-                    bar: {
-                    vertical: true,
-                    endingShape: 'rounded',
-                    columnWidth: '50%',
-                    distributed: true,
-
-                    }
-                },
-                dataLabels: {
-                    enabled: false
-                },
-                xaxis: {
-                    categories: ['Confirmed', 'Deaths', 'Recovered'],
-                }
-                },
-                
+                confirmed: commaNumber(result.result.confirmed),
+                deaths: commaNumber(result.result.deaths),
+                recovered: commaNumber(result.result.recovered),                
               });
             },
             (error) => {
@@ -78,7 +52,7 @@ export default class GlobalCards extends Component {
 
 
     render() {
-        const { error, isLoaded, confirmed, deaths, recovered} = this.state;
+        const { error, isLoaded, confirmed, deaths, recovered, date} = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;
           } else if (!isLoaded) {
@@ -89,7 +63,8 @@ export default class GlobalCards extends Component {
             <Container>
                 <Row className="justify-content-center">
                     <Col>
-                <h3 className="text-center">GLOBAL COUNT</h3>
+                        <h3 className="text-center">GLOBAL COUNT</h3>
+                        <p style={{fontSize:'10px'}} className="text-center">as of : {date}</p>
                     </Col>
                 </Row>
 
@@ -120,7 +95,7 @@ export default class GlobalCards extends Component {
                     </Col>
                     <Col sm="4">
                         <Row className="justify-content-center">
-                            <Card  bg="warning" className="text-center"  text="light" style={{ width: '18rem', margin: '5px' }}>
+                            <Card  bg="warning" className="text-center"  text="dark" style={{ width: '18rem', margin: '5px' }}>
                                 <Card.Header><b>RECOVERED</b></Card.Header>
                                 <Card.Body>
                                     <Card.Text>
@@ -132,11 +107,7 @@ export default class GlobalCards extends Component {
                     </Col>
                 </Row>
 
-                <Row className="justify-content-center">
-                    <Col>
-                        {/* <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={350} /> */}
-                    </Col>
-                </Row>
+
             </Container>
             </>
         )
