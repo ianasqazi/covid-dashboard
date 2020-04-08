@@ -1,8 +1,4 @@
 import React, { useRef, useEffect } from "react";
-import { Container, Row, Col } from 'reactstrap';
-import { RollBoxLoading } from 'react-loadingg';
-
-import { ToastContainer, toast } from 'react-toastify';
 
 import Navbar from './components/Navbar';
 import Header from "./components/Header";
