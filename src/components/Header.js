@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react';
+import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
 import Jumbotron from 'react-bootstrap/Jumbotron';
@@ -24,7 +24,7 @@ export default class Header extends Component {
                 from the front desk administrators taking all the calls from people in a panic to the 
                 ground-zero doctors, nurses, cleaning crew, to the medical industrial makers/suppliers/deliverers... 
                 <br></br>
-                <p className="text-right"><b><span style={{fontSize : '30px', color:'red'}}>THANK YOU</span> ... from all my ❤️ </b></p>
+                <p className="text-right"><b><span style={{fontSize : '30px', color:'red'}}>THANK YOU</span> ... from all my <span role='img' aria-label='Heart'>❤️</span> </b></p>
                 </blockquote>
 
             </Col>

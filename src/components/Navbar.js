@@ -29,7 +29,3 @@ export default class GlobalCards extends Component {
         )
     }
 }
-
-const NavStyles={
-  padding:"red"
-}
