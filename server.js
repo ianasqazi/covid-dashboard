@@ -12,17 +12,20 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const publicPath = path.join(__dirname,'client', 'public');
+const buildPath = path.join(__dirname,'build', 'public');
 
 // app.use(express.static(publicPath));
 // app.use('/', routes);
 
 app.use(function(req, res) {
   if (process.env.NODE_ENV === 'production') {
-    res.sendFile(path.join(__dirname, './client/build/index.html'));
+    // res.sendFile(path.join(__dirname, './client/build/index.html'));
+    res.sendFile(path.join(buildPath, 'index.html'));
+
   } else {
-    console.log('hit');
-    res.sendFile(path.join(__dirname, './client/public/index.html'));
-      // res.sendFile(path.join(publicPath, 'index.html'));
+    // console.log('hit');
+    // res.sendFile(path.join(__dirname, './client/public/index.html'));
+      res.sendFile(path.join(publicPath, 'index.html'));
 
   }
 });
