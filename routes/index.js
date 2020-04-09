@@ -15,7 +15,7 @@ router.use(function(req, res) {
   if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.join(__dirname, '../client/build/index.html'));
   } else {
-    console.log('hit');
+    console.log('hit public');
     res.sendFile(path.join(__dirname, '../client/public/index.html'));
   }
 });
