@@ -20,8 +20,8 @@ export default class GlobalCards extends Component {
     </Nav>
 
     <Nav>
-      <Nav.Link href="https://github.com/ianasqazi/covid-dashboard" target="_blank">GitHub Repo</Nav.Link>
-      <Nav.Link href="https://ianasqazi.ca" target="_blank">My Portfolio</Nav.Link>
+      <Nav.Link href="https://github.com/ianasqazi/covid-dashboard"  rel='noopener noreferrer' target="_blank">GitHub Repo</Nav.Link>
+      <Nav.Link href="https://ianasqazi.ca"  rel='noopener noreferrer' target="_blank">My Portfolio</Nav.Link>
     </Nav>
    
   </Navbar.Collapse>
