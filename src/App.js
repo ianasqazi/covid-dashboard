@@ -193,10 +193,11 @@ function App() {
       {/* <GlobalCards /> */}
 
       <div className="App">
-      <div className="mapContainer">
+<h1>Hello World</h1>
+      {/* <div className="mapContainer"> */}
         {/* Mapbox Container */}
-        <div className="mapBox" ref={mapboxElRef} />
-      </div>
+        {/* <div className="mapBox" ref={mapboxElRef} /> */}
+      {/* </div> */}
     </div>
  
     {/* <Footer /> */}
