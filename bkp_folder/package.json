@@ -1,0 +1,37 @@
+{
+    "name": "server-covid",
+    "version": "1.0.0",
+    "scripts": {
+        "client-install": "npm install --prefix client",
+        "start": "node server.js",
+        "server": "nodemon server.js",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "heroku-postbuild": "cd client && npm install && npm run build"
+    },
+    "heroku-run-build-script": true,
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.17.1",
+        "path": "^0.12.7",
+        "concurrently": "^4.1.2"
+    },
+    "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+    "main": "server.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ianasqazi/covid-dashboard.git"
+    },
+    "keywords": [
+        "covid",
+        "dashboard",
+        "corona",
+        "virus"
+    ],
+    "author": "Anas Qazi",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ianasqazi/covid-dashboard/issues"
+    },
+    "homepage": "https://github.com/ianasqazi/covid-dashboard#readme"
+}
