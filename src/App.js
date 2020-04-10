@@ -6,8 +6,8 @@ import React, { useRef, useEffect } from "react";
 // import Footer from './components/Footer';
 
 import mapboxgl from "mapbox-gl";
-import useSWR from "swr";
-import lookup from "country-code-lookup";
+// import useSWR from "swr";
+// import lookup from "country-code-lookup";
 
 import './App.css';
 
