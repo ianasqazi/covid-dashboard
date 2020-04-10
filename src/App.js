@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from "react";
 
-import Navbar from './components/Navbar';
-import Header from "./components/Header";
-import GlobalCards from "./components/GlobalCards";
-import Footer from './components/Footer';
+// import Navbar from './components/Navbar';
+// import Header from "./components/Header";
+// import GlobalCards from "./components/GlobalCards";
+// import Footer from './components/Footer';
 
 import mapboxgl from "mapbox-gl";
 import useSWR from "swr";
@@ -187,10 +187,10 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       
-      <Header />
-      <GlobalCards />
+      {/* <Header /> */}
+      {/* <GlobalCards /> */}
 
       <div className="App">
       <div className="mapContainer">
@@ -199,7 +199,7 @@ function App() {
       </div>
     </div>
  
-    <Footer />
+    {/* <Footer /> */}
 
     </>
   );
