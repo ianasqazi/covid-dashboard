@@ -1,29 +1,23 @@
 import React, { useRef, useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import NavbarReact from './components/Navbar';
 import Header from "./components/Header";
 import GlobalCards from "./components/GlobalCards";
-import Footer from './components/Footer';
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 
-// import MapBox from './components/MapBox';
+import "./App.css";
 
 import mapboxgl from "mapbox-gl";
 import useSWR from "swr";
 import lookup from "country-code-lookup";
 
-import './App.css';
-
 import "mapbox-gl/dist/mapbox-gl.css";
 
-mapboxgl.accessToken = "pk.eyJ1IjoidHJib3QiLCJhIjoiY2s3NmFscm1xMTV0MDNmcXFyOWp1dGhieSJ9.tR2IMHDqBPOf_AeGjHOKFA";
+mapboxgl.accessToken =
+  "pk.eyJ1IjoiaWFuYXNxYXppIiwiYSI6ImNrOHE4ZTF2NTAxYXEzbXBtMHZpcXA4ZnAifQ.llFT10ePXXMNmk8ff20nQg";
 
-function App() {
+export default function App() {
   const mapboxElRef = useRef(null); // DOM element to render map
 
   const fetcher = url =>
@@ -56,9 +50,7 @@ function App() {
     if (data) {
       const map = new mapboxgl.Map({
         container: mapboxElRef.current,
-        // style: "mapbox://styles/notalemesa/ck8dqwdum09ju1ioj65e3ql3k",
-        style: 'mapbox://styles/mapbox/dark-v10', //hosted style id
-
+        style: "mapbox://styles/mapbox/dark-v10", //hosted style id
         center: [16, 27],
         zoom: 2
       });
@@ -155,10 +147,15 @@ function App() {
 
             const coordinates = e.features[0].geometry.coordinates.slice();
 
-            const countryISO = lookup.byCountry(country)?.iso2 || lookup.byInternet(country)?.iso2;
-            const provinceHTML = province !== "null" ? `<p>Province: <b>${province}</b></p>` : "";
+            const countryISO =
+              lookup.byCountry(country)?.iso2 ||
+              lookup.byInternet(country)?.iso2;
+            const provinceHTML =
+              province !== "null" ? `<p>Province: <b>${province}</b></p>` : "";
             const mortalityRate = ((deaths / cases) * 100).toFixed(2);
-            const countryFlagHTML = Boolean(countryISO) ? `<img src="https://www.countryflags.io/${countryISO}/flat/64.png"></img>` : "";
+            const countryFlagHTML = Boolean(countryISO)
+              ? `<img src="https://www.countryflags.io/${countryISO}/flat/64.png"></img>`
+              : "";
 
             const HTML = `<p>Country: <b>${country}</b></p>
                 ${provinceHTML}
@@ -190,35 +187,24 @@ function App() {
     }
   }, [data]);
 
-
   return (
+    <div className="App">
+      <Router>
+        <div>
+          <Switch>
+            <Route path="/">
+              <NavBar />
+              <Header />
+              <GlobalCards />
 
-    <Router>
-      <div>
-        <Switch>
-          
-          <Route path="/">
-
-            <NavbarReact />
-            <Header />
-            <GlobalCards />
-
-            <div className="mapContainer">
-        {/* Mapbox Container */}
-        <div className="mapBox" ref={mapboxElRef} />
-      </div>
-
-
-            <Footer />
-
-          </Route>
-
-        </Switch>
-      </div>
-    </Router>
-
+              <div className="mapContainer">
+                <div className="mapBox" ref={mapboxElRef} />
+              </div>
+              <Footer />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    </div>
   );
 }
-
-
-export default App;

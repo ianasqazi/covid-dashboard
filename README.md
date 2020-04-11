@@ -3,13 +3,9 @@
 ![COVID-19 DASHBOARD - REACT](screenshots/1.png)
 ![COVID-19 DASHBOARD - REACT](screenshots/2.png)
 
-In the current state of the world 🦠 and with many of us in lockdown, I thought it would be a good idea to put down Netflix for a bit, and build a COVID map similar to Hopkins Dashboard.
+In the current state of the world 🦠 and with many of us in lockdown, I thought it would be a good idea to put down Netflix for a bit, and build a COVID Dashboard with MAP.
 
-Our version will be simpler but it's up to you to include more features.
-
-Thanks to Mapbox's ease of use this is a lot easier than you might think.
-
-This will be a long tutorial but if you have no patience like me... here are all the links you need. You can also scroll to the bottom for an extended list of resources or click 👉 here.
+My version will be simpler but it's up to you to include more features. Thanks to Mapbox's ease of use it was a lot easier than you might think.
 
 
 ## Links / Resources / API's USED
