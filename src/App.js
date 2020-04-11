@@ -11,17 +11,16 @@ import {
 // import GlobalCards from "./components/GlobalCards";
 // import Footer from './components/Footer';
 
-import mapboxgl from "mapbox-gl";
+// import mapboxgl from "mapbox-gl";
 // import useSWR from "swr";
 // import lookup from "country-code-lookup";
 
 import './App.css';
 
 
-import "mapbox-gl/dist/mapbox-gl.css";
+// import "mapbox-gl/dist/mapbox-gl.css";
 
-mapboxgl.accessToken =
-  "pk.eyJ1IjoidHJib3QiLCJhIjoiY2s3NmFscm1xMTV0MDNmcXFyOWp1dGhieSJ9.tR2IMHDqBPOf_AeGjHOKFA";
+// mapboxgl.accessToken = "pk.eyJ1IjoidHJib3QiLCJhIjoiY2s3NmFscm1xMTV0MDNmcXFyOWp1dGhieSJ9.tR2IMHDqBPOf_AeGjHOKFA";
 
 export default function App() {
   // const mapboxElRef = useRef(null); // DOM element to render map
@@ -192,7 +191,6 @@ export default function App() {
 
 
   return (
-    <>
 
 <Router>
       <div>
@@ -226,22 +224,6 @@ export default function App() {
       </div>
     </Router>
 
-      {/* <Navbar /> */}
-      
-      {/* <Header /> */}
-      {/* <GlobalCards /> */}
-
-      {/* <div className="App"> */}
-{/* <h1>Hello World</h1> */}
-      {/* <div className="mapContainer"> */}
-        {/* Mapbox Container */}
-        {/* <div className="mapBox" ref={mapboxElRef} /> */}
-      {/* </div> */}
-    {/* </div> */}
- 
-    {/* <Footer /> */}
-
-    </>
   );
 }
 
