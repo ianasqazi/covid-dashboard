@@ -11,7 +11,7 @@ import Header from "./components/Header";
 import GlobalCards from "./components/GlobalCards";
 import Footer from './components/Footer';
 
-import MapBox from './components/MapBox';
+// import MapBox from './components/MapBox';
 
 // import mapboxgl from "mapbox-gl";
 // import useSWR from "swr";
