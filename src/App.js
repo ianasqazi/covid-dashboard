@@ -22,7 +22,7 @@ import './App.css';
 
 // mapboxgl.accessToken = "pk.eyJ1IjoidHJib3QiLCJhIjoiY2s3NmFscm1xMTV0MDNmcXFyOWp1dGhieSJ9.tR2IMHDqBPOf_AeGjHOKFA";
 
-export default function App() {
+function App() {
   // const mapboxElRef = useRef(null); // DOM element to render map
 
   // const fetcher = url =>
@@ -240,4 +240,4 @@ function Users() {
 }
 
 
-// export default App;
+export default App;
