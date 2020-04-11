@@ -211,7 +211,8 @@ function App() {
       {/* </div> */}
     {/* </div> */}
 
-            <MapBox />
+            {/* <MapBox /> */}
+
             <Footer />
 
           </Route>
