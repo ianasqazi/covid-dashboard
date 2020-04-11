@@ -6,8 +6,8 @@ import {
   Link
 } from "react-router-dom";
 
-// import Navbar from './components/Navbar';
-// import Header from "./components/Header";
+import NavbarReact from './components/Navbar';
+import Header from "./components/Header";
 // import GlobalCards from "./components/GlobalCards";
 // import Footer from './components/Footer';
 
@@ -194,7 +194,7 @@ function App() {
 
 <Router>
       <div>
-        <nav>
+        {/* <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -206,7 +206,7 @@ function App() {
               <Link to="/users">Users</Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -218,7 +218,9 @@ function App() {
             <Users />
           </Route>
           <Route path="/">
-            <Home />
+            <NavbarReact />
+            <Header />
+
           </Route>
         </Switch>
       </div>

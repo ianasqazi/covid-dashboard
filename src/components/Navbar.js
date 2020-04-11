@@ -1,31 +1,29 @@
-import React, { Component } from "react";
+import React, { useState } from 'react';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+const Example = (props) => {
+  const [collapsed, setCollapsed] = useState(true);
 
+  const toggleNavbar = () => setCollapsed(!collapsed);
 
-
-export default class GlobalCards extends Component {
-
-    render() {
-        return (
-
-<Navbar bg="dark" variant="dark" expand="md">
-  <Navbar.Brand href="/">COVID-19</Navbar.Brand>
-  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
-      {/* <Nav.Link href="/">Home</Nav.Link>
-      <Nav.Link href="#link">Link</Nav.Link> */}
-    </Nav>
-
-    <Nav>
-      <Nav.Link href="https://github.com/ianasqazi/covid-dashboard"  rel='noopener noreferrer' target="_blank">GitHub Repo</Nav.Link>
-      <Nav.Link href="https://ianasqazi.ca"  rel='noopener noreferrer' target="_blank">My Portfolio</Nav.Link>
-    </Nav>
-   
-  </Navbar.Collapse>
-</Navbar>
-        )
-    }
+  return (
+    <div>
+      <Navbar color="faded" light>
+        <NavbarBrand href="/" className="mr-auto">reactstrap</NavbarBrand>
+        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+        <Collapse isOpen={!collapsed} navbar>
+          <Nav navbar>
+            <NavItem>
+              <NavLink href="/components/">Components</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
+  );
 }
+
+export default Example;

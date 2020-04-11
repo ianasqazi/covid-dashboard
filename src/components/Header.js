@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
-
-import Jumbotron from 'react-bootstrap/Jumbotron';
+import { Container, Row, Col, Jumbotron } from 'reactstrap';
 
 export default class Header extends Component {
 
