@@ -3,10 +3,11 @@
 ![COVID-19 DASHBOARD - REACT](screenshots/1.png)
 ![COVID-19 DASHBOARD - REACT](screenshots/2.png)
 
-In the current state of the world 🦠 and with many of us in lockdown, I thought it would be a good idea to put down Netflix for a bit, and build a COVID Dashboard with MAP.
+In the current state of the world during Corona virus pandemic 🦠 and with many of us in lockdown, I thought it would be a good idea to put down Netflix for a bit, and build a COVID Dashboard with MAP showing statistics of increase of corona virus around the world. 
 
-My version will be simpler but it's up to you to include more features. Thanks to Mapbox's ease of use it was a lot easier than you might think.
+Hover over the countries to see additional details for each country in tooltips. Used the api from  https://corona.lmao.ninja/v2/jhucsse & https://documenter.getpostman.com/view/2568274/SzS8rjbe?version=latest2 which returns a list of countries and provinces with COVID-19 stats. Then, mapped the data with the co-ordinates in the JSON to the map along with colour schemes and circle radius size based on the number. 
 
+Feel free to use the code from the links provided below. My version is a very simple version and more functionality but it's up to you to include more features. 
 
 ## Links / Resources / API's USED
 
@@ -43,28 +44,23 @@ My version will be simpler but it's up to you to include more features. Thanks t
 1. Clone the project
 
 ```
-git clone https://github.com/ianasqazi/google-books-search-react.git
+git clone https://github.com/ianasqazi/covid-dashboard.git
 ```
 
 2. Install 
 
 ```
-[sudo] npm install 
-[sudo] cd client && npm install 
+npm install 
 ```
 
 3. Run Application 
 
 ```
-cd google-books-search-react
+cd covid-dashboard
 
 # Using npm or yarn
-yarn || npm install
+yarn || npm start
 ```
-
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
