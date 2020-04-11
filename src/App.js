@@ -217,11 +217,14 @@ function App() {
           <Route path="/users">
             <Users />
           </Route>
+
           <Route path="/">
+            
             <NavbarReact />
             <Header />
 
           </Route>
+
         </Switch>
       </div>
     </Router>
