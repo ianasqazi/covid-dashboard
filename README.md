@@ -5,7 +5,8 @@
 
 Click here to checkout the **[CODESANDBOX](https://codesandbox.io/s/covid19-dashboard-kmv7r)** 
 
-This is a Demo application which was built to see, save or buy your favorite books. This application utilizes Mongo, Express, React, Node stack. 
+Click here to checkout the **[GITHUB - REPO](https://github.com/ianasqazi/covid-dashboard)** 
+
 
 You can checkout the [github source code here](https://github.com/ianasqazi/google-books-search-react). If you are looking to build a React Native mobile app & also reuse the code to deploy on web, this repo can be used as a great starting point.
 
@@ -14,19 +15,21 @@ You can checkout the [github source code here](https://github.com/ianasqazi/goog
 ## API's Used 
 
 
-## Libraries Used 
 
-    "axios": "^0.19.2",
-    "comma-number": "^2.0.1",
-    "country-code-lookup": "0.0.17",
-    "mapbox-gl": "^1.9.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-loadingg": "^1.7.2",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0",
-    "reactstrap": "^8.4.1",
-    "swr": "^0.2.0"
+## Libraries/Frameworks Used 
+
+1. REACT : "^16.12.0"
+2. REACT-DOM : "^16.12.0"
+3. REACT-ROUTER-DOM : "^5.1.2"
+4. REACT-SCRIPT : "3.4.0"
+5. REACTSTRAP : : "^8.4.1"
+6. REACT-LOADINGG : "^1.7.2"
+7. MAPBOX-GL : "^1.9.1"
+8. AXIOS : "^0.19.2"
+9. SWR : "^0.2.0"
+10. COUNTRY-CODE-LOOKUP : "^0.0.17"
+11. COMMA-NUMBER : "^2.0.1"
+
 
 ## Getting Started
 
