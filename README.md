@@ -2,7 +2,7 @@
 
 ![COVID-19 DASHBOARD - REACT](screenshots/gbooksreact.png)
 
-Click here to checkout the **[HEROKU App](https://intense-bayou-80925.herokuapp.com/)** 
+Click here to checkout the **[CODESANDBOX](https://codesandbox.io/s/covid19-dashboard-kmv7r)** 
 
 This is a Demo application which was built to see, save or buy your favorite books. This application utilizes Mongo, Express, React, Node stack. 
 
