@@ -9,7 +9,7 @@ import {
 import NavbarReact from './components/Navbar';
 import Header from "./components/Header";
 import GlobalCards from "./components/GlobalCards";
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 // import mapboxgl from "mapbox-gl";
 // import useSWR from "swr";
@@ -224,6 +224,8 @@ function App() {
             <Header />
             <GlobalCards />
 
+
+            <Footer />
           </Route>
 
         </Switch>
