@@ -56,7 +56,6 @@ function App() {
     if (data) {
       const map = new mapboxgl.Map({
         container: mapboxElRef.current,
-        // container: 'mapBox',
         // style: "mapbox://styles/notalemesa/ck8dqwdum09ju1ioj65e3ql3k",
         style: 'mapbox://styles/mapbox/dark-v10', //hosted style id
 
@@ -204,15 +203,10 @@ function App() {
             <Header />
             <GlobalCards />
 
-     {/* <div className="App"> */}
-      {/* <div className="mapContainer"> */}
+            <div className="mapContainer">
         {/* Mapbox Container */}
-        {/* <div className="mapBox" /> */}
-      {/* </div> */}
-    {/* </div> */}
-
-            {/* <MapBox /> */}
-                    <div className="mapBox" ref={mapboxElRef} />
+        <div className="mapBox" ref={mapboxElRef} />
+      </div>
 
 
             <Footer />

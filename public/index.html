@@ -64,4 +64,27 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDi_P7Mn3s6hnQhbkWW8GclqfTUA2uxzhY",
+    authDomain: "covid-dashboard-1e884.firebaseapp.com",
+    databaseURL: "https://covid-dashboard-1e884.firebaseio.com",
+    projectId: "covid-dashboard-1e884",
+    storageBucket: "covid-dashboard-1e884.appspot.com",
+    messagingSenderId: "300488789777",
+    appId: "1:300488789777:web:5ba9dd8f35ea47485206b0",
+    measurementId: "G-XHLGPF8578"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </html>

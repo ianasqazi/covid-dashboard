@@ -10,6 +10,7 @@
 
 # production
 /build
+/bkp_folder
 
 # misc
 .DS_Store
