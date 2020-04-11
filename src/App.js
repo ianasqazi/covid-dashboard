@@ -8,7 +8,7 @@ import {
 
 import NavbarReact from './components/Navbar';
 import Header from "./components/Header";
-// import GlobalCards from "./components/GlobalCards";
+import GlobalCards from "./components/GlobalCards";
 // import Footer from './components/Footer';
 
 // import mapboxgl from "mapbox-gl";
@@ -219,9 +219,10 @@ function App() {
           </Route>
 
           <Route path="/">
-            
+
             <NavbarReact />
             <Header />
+            <GlobalCards />
 
           </Route>
 
