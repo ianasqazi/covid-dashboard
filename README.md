@@ -3,17 +3,26 @@
 ![COVID-19 DASHBOARD - REACT](screenshots/1.png)
 ![COVID-19 DASHBOARD - REACT](screenshots/2.png)
 
-Click here to checkout the **[CODESANDBOX](https://codesandbox.io/s/covid19-dashboard-kmv7r)** 
+In the current state of the world 🦠 and with many of us in lockdown, I thought it would be a good idea to put down Netflix for a bit, and build a COVID map similar to Hopkins Dashboard.
 
-Click here to checkout the **[GITHUB - REPO](https://github.com/ianasqazi/covid-dashboard)** 
+Our version will be simpler but it's up to you to include more features.
+
+Thanks to Mapbox's ease of use this is a lot easier than you might think.
+
+This will be a long tutorial but if you have no patience like me... here are all the links you need. You can also scroll to the bottom for an extended list of resources or click 👉 here.
 
 
-You can checkout the [github source code here](https://github.com/ianasqazi/google-books-search-react). If you are looking to build a React Native mobile app & also reuse the code to deploy on web, this repo can be used as a great starting point.
+## Links / Resources / API's USED
 
-## Resources 
+**[CODESANDBOX](https://codesandbox.io/s/covid19-dashboard-kmv7r)** 
 
-## API's Used 
+**[GITHUB - REPO](https://github.com/ianasqazi/covid-dashboard)** 
 
+**[COVID API  - DATA 1](https://docs.corona.lmao-xd.wtf/version-2)** 
+
+**[COVID API  - DATA 2](https://documenter.getpostman.com/view/2568274/SzS8rjbe?version=latest2)** 
+
+**[DEV COMMUNITY POST](https://dev.to/alemesa/how-to-create-a-covid-19-map-with-mapbox-and-react-3jgf)** 
 
 
 ## Libraries/Frameworks Used 
