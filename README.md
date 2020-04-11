@@ -1,12 +1,32 @@
-# Covid 19 Dashboard - REACT
+# COVID-19 DASHBOARD - REACT
 
-![COVID-19 DASHBOARD - REACT](screenshots/gbooksreact.png)
+![COVID-19 DASHBOARD - REACT](screenshots/1.png)
+![COVID-19 DASHBOARD - REACT](screenshots/2.png)
 
 Click here to checkout the **[CODESANDBOX](https://codesandbox.io/s/covid19-dashboard-kmv7r)** 
 
 This is a Demo application which was built to see, save or buy your favorite books. This application utilizes Mongo, Express, React, Node stack. 
 
 You can checkout the [github source code here](https://github.com/ianasqazi/google-books-search-react). If you are looking to build a React Native mobile app & also reuse the code to deploy on web, this repo can be used as a great starting point.
+
+## Resources 
+
+## API's Used 
+
+
+## Libraries Used 
+
+    "axios": "^0.19.2",
+    "comma-number": "^2.0.1",
+    "country-code-lookup": "0.0.17",
+    "mapbox-gl": "^1.9.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-loadingg": "^1.7.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "reactstrap": "^8.4.1",
+    "swr": "^0.2.0"
 
 ## Getting Started
 
@@ -33,6 +53,7 @@ cd google-books-search-react
 # Using npm or yarn
 yarn || npm install
 ```
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
